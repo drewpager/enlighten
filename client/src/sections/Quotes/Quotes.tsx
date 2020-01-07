@@ -7,7 +7,7 @@ import { List, Button, Spin, Alert } from 'antd';
 import { QuotesSkeleton } from './components';
 import './styles/Quotes.css';
 
-const QUOTES = gql`
+export const QUOTES = gql`
   query Quote {
     quotes {
       id
