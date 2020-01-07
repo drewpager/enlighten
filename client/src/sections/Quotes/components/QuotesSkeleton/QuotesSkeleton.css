@@ -1,0 +1,18 @@
+.quotes-skeleton .ant-divider-horizontal {
+  margin: 12px 0;
+}
+
+.quotes-skeleton 
+  .ant-skeleton-content
+  .ant-skeleton-title
+  + .ant-skeleton-paragraph {
+    margin-top: 12px;
+}
+
+.quotes-skeleton .quotes-skeleton__alert {
+  margin-top: 20px;
+}
+
+.quotes__alert {
+  margin-bottom: 20px;
+}

@@ -17,6 +17,13 @@ const seed = async () => {
         category: "philosophy",
         period: 1500 
       },
+      {
+        _id: new ObjectId,
+        quote: "Slow is smooth and smooth is fast",
+        author: "US Military Adage",
+        category: "philosophy",
+        period: 1900 
+      },
       {
         _id: new ObjectId, 
         quote: "Do, or do not. There is no try.",
