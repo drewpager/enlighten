@@ -3,7 +3,7 @@ import { useQuery, useMutation } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 import { Quote as QuotesData } from './__generated__/Quote';
 import { DeleteQuote as DeleteQuoteData, DeleteQuoteVariables } from './__generated__/DeleteQuote';
-import { List, Spin, Button, Alert } from 'antd';
+import { List, Spin, Button, Alert, Tag } from 'antd';
 import { QuotesSkeleton } from './components';
 import './styles/Quotes.css';
 
@@ -93,9 +93,10 @@ export const Quotes = ({ title }: Props) => {
         >
           <List.Item.Meta 
             title={<p>{quote.quote}</p>}
-            description={<p>{quote.author} | {quote.category}</p>}
+            description={<p>{quote.author}</p>}
           />
           <Button type="primary" onClick={() => handleDeleteQuote(quote.id)}>Delete</Button>
+          <Tag color="blue" style={{ marginLeft: 20 }}>{quote.category}</Tag>
         </List.Item>
       )}
     />
