@@ -7,6 +7,7 @@ export const typeDefs = gql`
     author: String!,
     category: String!,
     period: Int!,
+    image: String
   }
 
   type Query {

@@ -5,7 +5,8 @@ export interface Quote {
   quote: string,
   author: string,
   category: string,
-  period: number  
+  period: number,
+  image: string 
 }
 
 export interface Database {
