@@ -15,6 +15,7 @@ export const QUOTES = gql`
       author
       category
       period
+      image
     }
   }
 `;
@@ -86,7 +87,7 @@ export const Quotes = ({ title }: Props) => {
             <img
               width={272}
               alt="logo"
-              src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+              src={quote.image && quote.image.length ? quote.image : "https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png" }
             />
           }
         >

@@ -13,6 +13,7 @@ export interface Quote_quotes {
   author: string;
   category: string;
   period: number;
+  image: string;
 }
 
 export interface Quote {
