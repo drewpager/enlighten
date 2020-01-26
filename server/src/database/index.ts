@@ -14,5 +14,5 @@ export const connectDatabase = async (): Promise<Database> => {
 
   return {
     quotes: db.collection("test_quotes")
-  }
+  } 
 }
